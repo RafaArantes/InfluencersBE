@@ -13,6 +13,7 @@ router.post(
   (req, res, next) => {
     const influencersRepository = new influencersRepo.InfluencersRepository();
     const influencers = req.body.influencers;
+
     influencersRepository.create(
       influencers,
       httpHelper.defaultMongoCallback(res, "Cliente criado com sucesso")
