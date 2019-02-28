@@ -1,8 +1,7 @@
-# Shitty-men
+# Affable backend
 
-Stupid in every level: uses Mongo, Express and Node to create a rest api. Even a 11 year old can do this. But we do it and... we make some money.
+Simple in every level: uses Mongo, Express and Node to create a rest api. 
 
-## About the configurations
 
 ### Database
 
@@ -32,4 +31,3 @@ The structure goes like this:
 
 * <code>app/repository</code> has every connection to the database. It uses the mongojs lib and each file will contain queries related to a specific entity (for instance, companies has queries related to it, etc).
 * <code>app/router</code> has every route and control of the route. As I said before... there is project pattern with pretty controllers around and etcera. You just define the route importing route from express and voilá. Do not forget to add it to <code>app/router/index</code> later!
-* the others parts are just helpers and modules (like login and jwt). Don't worry about it :)
